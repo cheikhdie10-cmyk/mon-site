@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHDN | Administration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260327-17" />
+</head>
+<body data-page="admin">
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">CHDN<span>STORE</span></a>
+      <nav class="menu">
+        <a href="index.html">Accueil</a>
+        <a href="products.html">Produits</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+      <div class="admin-actions">
+        <button class="btn-primary" id="refreshAdminBtn">Actualiser</button>
+        <button class="btn-secondary" id="logoutAdminBtn" hidden>Se deconnecter</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container page-main admin-main">
+    <section class="admin-auth-card" id="adminAuthCard" data-reveal>
+      <h2>Connexion proprietaire</h2>
+      <p>Entrez le mot de passe admin pour acceder a la gestion du site.</p>
+      <form id="adminLoginForm" class="field-grid">
+        <input type="password" id="adminPassword" placeholder="Mot de passe admin" required />
+        <button type="submit" class="btn-primary">Se connecter</button>
+      </form>
+      <p class="admin-auth-message" id="adminAuthMessage"></p>
+    </section>
+
+    <div id="adminApp" class="admin-app" hidden>
+    <section class="page-hero" data-reveal>
+      <h1>Panneau Proprietaire CHDN</h1>
+      <p>Gerez les produits, suivez les commandes et surveillez l'activite du site en temps reel.</p>
+    </section>
+
+    <section class="admin-notice" id="adminNotice" data-reveal>
+      Chargement des donnees...
+    </section>
+
+    <section class="admin-kpi-grid">
+      <article class="kpi-card" data-reveal>
+        <h3>Produits</h3>
+        <p class="kpi-value" id="kpiProducts">0</p>
+      </article>
+      <article class="kpi-card" data-reveal>
+        <h3>Commandes</h3>
+        <p class="kpi-value" id="kpiOrders">0</p>
+      </article>
+      <article class="kpi-card" data-reveal>
+        <h3>Chiffre d'affaires</h3>
+        <p class="kpi-value" id="kpiRevenue">0.00 EUR</p>
+      </article>
+      <article class="kpi-card" data-reveal>
+        <h3>Commandes en cours</h3>
+        <p class="kpi-value" id="kpiPending">0</p>
+      </article>
+    </section>
+
+    <section class="admin-grid">
+      <article class="admin-panel" data-reveal>
+        <h2>Gestion des produits</h2>
+        <form id="productForm" class="field-grid">
+          <input type="text" id="productName" placeholder="Nom produit" required />
+          <select id="productCategory" required>
+            <option value="mode">Mode</option>
+            <option value="tech">Tech</option>
+            <option value="maison">Maison</option>
+          </select>
+          <input type="number" id="productPrice" placeholder="Prix" min="0.01" step="0.01" required />
+          <input type="url" id="productImage" placeholder="URL image" required />
+          <textarea id="productDescription" rows="4" placeholder="Description produit" required></textarea>
+          <button type="submit" class="btn-primary">Ajouter le produit</button>
+        </form>
+
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Categorie</th>
+                <th>Prix</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="productsTableBody"></tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="admin-panel" data-reveal>
+        <h2>Gestion des commandes</h2>
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Commande</th>
+                <th>Client</th>
+                <th>Total</th>
+                <th>Statut</th>
+                <th>Details</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="ordersTableBody"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="admin-panel" data-reveal>
+      <h2>Activite recente du site</h2>
+      <ul class="activity-list" id="eventList"></ul>
+    </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div>
+        <h3>CHDN STORE</h3>
+        <p>2024 - <span id="year"></span> CHDN.</p>
+      </div>
+      <div class="footer-links">
+        <a href="faq.html">FAQ</a>
+        <a href="legal.html">Mentions legales</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=20260327-17"></script>
+  <script src="admin.js?v=20260327-17"></script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHDN | A propos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260327-17" />
+</head>
+<body data-page="about">
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">CHDN<span>STORE</span></a>
+      <nav class="menu">
+        <a href="index.html">Accueil</a>
+        <a href="products.html">Produits</a>
+        <a href="about.html">A propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="cart-btn" id="openCartBtn" aria-label="Ouvrir le panier">
+        Panier <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container page-main">
+    <section class="page-hero" data-reveal>
+      <h1>Une marque construite pour la qualite</h1>
+      <p>CHDN combine une direction artistique forte, une execution technique propre et une obsession du service client.</p>
+    </section>
+
+    <section class="about-grid">
+      <article class="story-card" data-reveal>
+        <h2>Notre vision</h2>
+        <p>Nous croyons qu'un site e-commerce doit etre performant, beau et simple a utiliser. Chaque page est pensee pour inspirer confiance et faciliter l'achat.</p>
+        <p>Nous selectionnons des collections limitees, puis nous optimisons toute l'experience: navigation, checkout et accompagnement apres commande.</p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn-primary">Explorer la boutique</a>
+          <a href="contact.html" class="btn-secondary">Echanger avec nous</a>
+        </div>
+      </article>
+      <div class="story-visual" data-reveal>
+        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1100&q=80" alt="Equipe CHDN" />
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title" data-reveal>
+        <h2>Nos valeurs</h2>
+      </div>
+      <div class="value-grid">
+        <article class="value-card" data-reveal>
+          <h3>Exigence</h3>
+          <p>Chaque detail de l'interface et du service est soigne.</p>
+        </article>
+        <article class="value-card" data-reveal>
+          <h3>Transparence</h3>
+          <p>Informations claires sur les produits, prix et delais.</p>
+        </article>
+        <article class="value-card" data-reveal>
+          <h3>Performance</h3>
+          <p>Une boutique rapide pour augmenter la satisfaction client.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div>
+        <h3>CHDN STORE</h3>
+        <p>2024 - <span id="year"></span> CHDN.</p>
+      </div>
+      <div class="footer-links">
+        <a href="faq.html">FAQ</a>
+        <a href="legal.html">Mentions legales</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+      </div>
+    </div>
+  </footer>
+  <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Votre panier</h3>
+      <button id="closeCartBtn" aria-label="Fermer le panier">X</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <p>Total: <strong id="cartTotal">0.00 EUR</strong></p>
+      <a class="checkout-btn" href="checkout.html">Commander</a>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <script src="script.js?v=20260327-17"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

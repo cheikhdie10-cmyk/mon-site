@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHDN | Accueil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260327-17" />
+</head>
+<body data-page="home">
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">CHDN<span>STORE</span></a>
+      <nav class="menu">
+        <a href="index.html">Accueil</a>
+        <a href="products.html">Produits</a>
+        <a href="about.html">A propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="cart-btn" id="openCartBtn" aria-label="Ouvrir le panier">
+        Panier <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <article class="hero-copy" data-reveal>
+        <span class="pill">COLLECTION CHDN 2026</span>
+        <h1>Experience d'achat fluide, moderne et premium.</h1>
+        <p>Decouvrez une interface claire, coherente et rapide pour parcourir nos produits et commander facilement.</p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn-primary">Decouvrir les produits</a>
+          <a href="about.html" class="btn-secondary">Voir la marque</a>
+        </div>
+        <div class="stats-row">
+          <div class="stat">
+            <strong>15k+</strong>
+            <span>Clients satisfaits</span>
+          </div>
+          <div class="stat">
+            <strong>24h</strong>
+            <span>Expedition moyenne</span>
+          </div>
+          <div class="stat">
+            <strong>4.9/5</strong>
+            <span>Avis boutique</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="hero-media" data-reveal>
+        <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=1300&q=80" alt="Sneaker futuriste CHDN" />
+        <div class="hero-badge">
+          <strong>$210</strong>
+          <span>Air Max Running Edition</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="section-title" data-reveal>
+      <h2>Univers CHDN</h2>
+      <p>Explorez nos categories les plus recherchees.</p>
+    </div>
+    <div class="category-grid">
+      <article class="category-card" data-reveal>
+        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1000&q=80" alt="Mode" />
+        <div class="category-body">
+          <h3>Mode</h3>
+          <p>Silhouettes urbaines et coupes premium.</p>
+          <a href="products.html">Voir les produits</a>
+        </div>
+      </article>
+      <article class="category-card" data-reveal>
+        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=1000&q=80" alt="Tech" />
+        <div class="category-body">
+          <h3>Tech</h3>
+          <p>Accessoires connectes et performants.</p>
+          <a href="products.html">Voir les produits</a>
+        </div>
+      </article>
+      <article class="category-card" data-reveal>
+        <img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=1000&q=80" alt="Maison" />
+        <div class="category-body">
+          <h3>Maison</h3>
+          <p>Design interieur minimal et chaleureux.</p>
+          <a href="products.html">Voir les produits</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="container page-main">
+    <article class="cta-band" data-reveal>
+      <h2>Besoin d'un conseil avant commande ?</h2>
+      <p>Notre equipe CHDN vous accompagne pour choisir les bons produits.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn-primary">Parler a un conseiller</a>
+          <a href="checkout.html" class="btn-secondary">Aller au paiement</a>
+      </div>
+    </article>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div>
+        <h3>CHDN STORE</h3>
+        <p>2024 - <span id="year"></span> CHDN. Tous droits reserves.</p>
+      </div>
+      <div class="footer-links">
+        <a href="faq.html">FAQ</a>
+        <a href="legal.html">Mentions legales</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Votre panier</h3>
+      <button id="closeCartBtn" aria-label="Fermer le panier">X</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <p>Total: <strong id="cartTotal">0.00 EUR</strong></p>
+      <a class="checkout-btn" href="checkout.html">Commander</a>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js?v=20260327-17"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

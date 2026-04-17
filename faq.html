@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHDN | FAQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260327-17" />
+</head>
+<body data-page="faq">
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">CHDN<span>STORE</span></a>
+      <nav class="menu">
+        <a href="index.html">Accueil</a>
+        <a href="products.html">Produits</a>
+        <a href="about.html">A propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="cart-btn" id="openCartBtn" aria-label="Ouvrir le panier">
+        Panier <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container page-main">
+    <section class="page-hero" data-reveal>
+      <h1>FAQ CHDN</h1>
+      <p>Retrouvez les reponses rapides aux questions les plus frequentes.</p>
+    </section>
+
+    <section class="faq-list">
+      <details class="faq-item" open data-reveal>
+        <summary>Quels sont les delais de livraison ?</summary>
+        <p>La plupart des commandes sont expediees sous 24/48h puis livrees selon votre zone.</p>
+      </details>
+      <details class="faq-item" data-reveal>
+        <summary>Comment suivre ma commande ?</summary>
+        <p>Vous recevez un email avec numero de suivi des que votre colis quitte notre entrepot.</p>
+      </details>
+      <details class="faq-item" data-reveal>
+        <summary>Puis-je modifier ma commande ?</summary>
+        <p>Oui, contactez-nous rapidement via la page contact avant la phase d'expedition.</p>
+      </details>
+      <details class="faq-item" data-reveal>
+        <summary>Le paiement est-il securise ?</summary>
+        <p>Oui, le checkout est protege et les donnees sont traitees de facon securisee.</p>
+      </details>
+      <details class="faq-item" data-reveal>
+        <summary>Comment fonctionne le retour ?</summary>
+        <p>Les retours sont possibles selon les conditions legales et la politique en vigueur.</p>
+      </details>
+      <details class="faq-item" data-reveal>
+        <summary>Le support est-il disponible le week-end ?</summary>
+        <p>Notre equipe support est joignable 7j/7 via la page contact pour toute assistance.</p>
+      </details>
+    </section>
+
+    <section class="hero-actions" data-reveal>
+      <a href="contact.html" class="btn-primary">Contacter le support</a>
+      <a href="products.html" class="btn-secondary">Retour produits</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div>
+        <h3>CHDN STORE</h3>
+        <p>2024 - <span id="year"></span> CHDN.</p>
+      </div>
+      <div class="footer-links">
+        <a href="faq.html">FAQ</a>
+        <a href="legal.html">Mentions legales</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+      </div>
+    </div>
+  </footer>
+  <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Votre panier</h3>
+      <button id="closeCartBtn" aria-label="Fermer le panier">X</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <p>Total: <strong id="cartTotal">0.00 EUR</strong></p>
+      <a class="checkout-btn" href="checkout.html">Commander</a>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <script src="script.js?v=20260327-17"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
